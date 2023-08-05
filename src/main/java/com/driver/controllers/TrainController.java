@@ -63,7 +63,7 @@ public class TrainController {
         }
     }
 
-    @GetMapping("get-list-of-trains-arriving-in-a-range-of-time")
+    @GetMapping("/get-list-of-trains-arriving-in-a-range-of-time")
     public List<Integer> calculateListOfTrainIdsAtAStationInAParticularTimeRange(@RequestParam("station")Station station,
                                                                                  @RequestParam("startTime")LocalTime startTime
                                                                                  ,@RequestParam("endTime")LocalTime endTime){
